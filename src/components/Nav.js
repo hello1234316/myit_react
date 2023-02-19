@@ -150,12 +150,12 @@ function BasicExample() {
     </a>
   </li>
   <li className="nav-item">
-    <a className="nav-link" id="links" href="https://discord.gg/U3DW4cNkMd">
+    <a className="nav-link" id="links" href="https://discord.gg/U3DW4cNkMd" target={'_blank'}>
       加入Discord
     </a>
   </li>
   <li className="nav-item">
-    <a href="https://github.com/My-IT-discord/myit_react" target={'_blank'}>
+    <a className="nav-link" id="links" href="https://github.com/My-IT-discord/myit_react" target={'_blank'}>
       Github原代碼
   </a>
   </li>
