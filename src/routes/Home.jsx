@@ -62,7 +62,7 @@ const Home = () => {
               textDecoration: "none",
             }}*/
           >
-           <div className="container py-4" id="blog">
+           <div className="container py-4 blog_hover box blog_home" id="blog">
                <article className="blog dark blue" id="blog_article">
                  <div className="blog__text">
                    <h1 className="blog__title blue">
