@@ -36,7 +36,7 @@ const Home = () => {
       <p className="intro-text" >
         果然是我熟悉的myit 還是那麼的不營養
         </p>
-                  <a class="btn btn-primary btn-lg" id="btn" href="https://discord.gg/myit" role="button" target={'_blank'}>加入Discord</a>
+                  <a class="btn btn-primary btn-lg" id="btn" href="https://discord.gg/U3DW4cNkMd" role="button" target={'_blank'}>加入Discord</a>
                   <a class="btn btn-primary btn-lg" id="btn" href="https://github.com/My-IT-discord/myit_react" role="button" target={'_blank'}>Github原代碼</a>
               </div>
           </div>
