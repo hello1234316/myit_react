@@ -24,7 +24,7 @@ const Home = () => {
         textAlign: "center",*/
       }}
     >
-      <section id='intro'>
+      <section id='intro' class="banner_part">
     <div class="jumbotron">
       <div class='container'>
           <div class='row'>
@@ -43,10 +43,12 @@ const Home = () => {
       </div>
     </div>
 </section>
-  
+
+<br></br><br></br>
       {Array.from(posts.posts).map((post) => {
         return (
           <a
+          className="blog_link"
           target="_blank"
             href={`${post.link}`}
             /*style={{
@@ -95,9 +97,8 @@ const Home = () => {
   <div className="container footer">
     <div className="row">
       <div className="col-md-4 text-left">
-        <img className="img" src="https://myitblog.tk/pictures/MyIT.png" width={100} />
         <p className="p">
-          {"{"}My-IT{"}"}程式討論區
+        {"{"}My-IT{"}"}程式討論區
         </p>
         <p>
           {"{"}My-IT{"}"}▸ 一個程式討論群組

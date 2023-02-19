@@ -7,13 +7,6 @@ import Image from "react-bootstrap/Image";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { styled } from '@mui/material/styles';
-import Card from '@mui/material/Card';
-import CardHeader from '@mui/material/CardHeader';
-import CardContent from '@mui/material/CardContent';
-import Avatar from '@mui/material/Avatar';
-import Typography from '@mui/material/Typography';
-import { red } from '@mui/material/colors';
 import members from "../members.json";
 import ex_members from "../ex_members.json";
 import bots from "../bots.json";
@@ -23,88 +16,122 @@ const About = () => {
   return (
     <div
       style={{
-        height: "100vh",
+       
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         textAlign: "center",
       }}
     >
-      <br></br><br></br><br></br><br></br><br></br><br></br>
-      <h1>
+      <section id='intro' class="banner_part">
+    <div class="jumbotron">
+      <div class='container'>
+          <div class='row'>
+              <div class='col-md-12'>
+              <h1 id="intro">
         <TypeAnimation className="ta" sequence={["關於我們"]}></TypeAnimation>
       </h1>
-      <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+                
+              </div>
+          </div>
+      </div>
+    </div>
+</section>
+      <br></br><br></br>
       <div
-        style={{ backgroundColor: "#252426", width: "100%", padding: "100px" }}
+       /* style={{ backgroundColor: "#252426", width: "100%", padding: "100px" }}*/
       >
         <h2>我們的管理團隊</h2>
         <p>(排名不分先後)</p>
         <Container>
+
+        <Container>
           {Array.from(members.members).map((member) => {
             return (
-              <Row>
-                <Col md={4}>
-                  <Image
-                    src={`img/${member.avatar}`}
-                    width={100}
-                    roundedCircle
-                  />
-                </Col>
-                <Col
-                  md={8}
-                  style={{
-                    textAlign: "left",
-                  }}
-                >
-                  <p>{member.name}</p>
-                  <p>{member.description}</p>
-                </Col>
-              </Row>
-              
+              <a href={member.link} target="__blank">
+                <Row style={{ textAlign: "center" }}>
+                  <Col  style={{ textAlign: "center" }}>
+                    <Image
+                      src={`img/${member.avatar}`}
+                      width={100}
+                      roundedCircle
+                    />
+                  </Col>
+                  <Col
+                    md={10}
+                    style={{ textAlign: "center" }}
+                  >
+                    <p>{member.name}</p>
+                    <p>{member.description}</p>
+                  </Col>
+                </Row>
+                <br></br><br></br>
+                </a>
+
             );
           })}
         </Container>
+       
+
+        
+        </Container>
       </div>
       <div
-        style={{ backgroundColor: "#252426", width: "100%", padding: "100px" }}
+        style={{ width: "100%", padding: "100px" }}
       >
         <h2>前管理團隊成員</h2>
         <p>(排名不分先後)</p>
         <Container>
-          {Array.from(ex_members.ex_members).map((ex_members) => {
+
+       
+
+          {Array.from(ex_members.ex_members).map((ex_member) => {
             return (
               <Row>
                 <Col md={4}>
                   <Image
-                    src={`img/${ex_members.avatar}`}
+                    src={`img/${ex_member.avatar}`}
                     width={100}
                     roundedCircle
                   />
+                   <br></br><br></br>
                 </Col>
                 <Col
                   md={8}
                   style={{
-                    textAlign: "left",
+                    textAlign: "center",
                   }}
                 >
-                  <p>{ex_members.name}</p>
-                  <p>{ex_members.description}</p>
+                  <p>{ex_member.name}</p>
+                  <p>{ex_member.description}</p>
+                  <br></br><br></br>
                 </Col>
+                <br></br><br></br>
               </Row>
-              
+                
             );
+           
           })}
+
+
         </Container>
       </div>
-      <div style={{ marginTop: "100px", width: "90%", padding: "100px" }}>
+
+
+     
+
+
+
+
+      <div style={{ backgroundColor: "#252426", marginTop: "100px", width: "90%", padding: "100px" , textAlign: "center"}}>
         <h2>由我們的管理團隊製作的機器人</h2>
+        <br></br>
         <Container>
           {Array.from(bots.bots).map((bot) => {
             return (
               <a href={bot.link} target="__blank">
-                <Row style={{ padding: "20px" }}>
-                  <Col md={4}>
+                <Row style={{ textAlign: "center" }}>
+                  <Col  style={{ textAlign: "center" }}>
                     <Image
                       src={`img/${bot.avatar}`}
                       width={100}
@@ -112,21 +139,24 @@ const About = () => {
                     />
                   </Col>
                   <Col
-                    md={8}
-                    style={{
-                      textAlign: "left",
-                      color: "white",
-                      textDecoration: "none",
-                    }}
+                    md={10}
+                    style={{ textAlign: "center" }}
                   >
                     <p>{bot.name}</p>
                     <p>{bot.description}</p>
                   </Col>
                 </Row>
+                <br></br><br></br>
               </a>
+
             );
           })}
         </Container>
+
+
+       
+
+
 
 
         <br></br><br></br>
@@ -135,7 +165,6 @@ const About = () => {
   <div className="container footer">
     <div className="row">
       <div className="col-md-4 text-left">
-        <img className="img" src="https://myitblog.tk/pictures/MyIT.png" width={100} />
         <p className="p">
           {"{"}My-IT{"}"}程式討論區
         </p>

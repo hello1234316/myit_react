@@ -78,7 +78,6 @@ const Difference_between_l2_and_l3_switch = () => {
   <div className="container footer">
     <div className="row">
       <div className="col-md-4 text-left">
-        <img className="img" src="https://myitblog.tk/pictures/MyIT.png" width={100} />
         <p className="p">
           {"{"}My-IT{"}"}程式討論區
         </p>
