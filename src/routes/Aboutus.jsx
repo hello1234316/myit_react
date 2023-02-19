@@ -183,7 +183,7 @@ const About = () => {
             <a href="/">主頁</a>
           </li>
           <li>
-            <a href="https://discord.gg/myit">加入Discord</a>
+            <a href="https://discord.gg/U3DW4cNkMd">加入Discord</a>
           </li>
         </ul>
         <ul>
@@ -191,7 +191,7 @@ const About = () => {
             <a href="/aboutus">關於我們</a>
           </li>
           <li>
-            <a href="https://github.com/My-IT-discord/myit_react">Github原代碼</a>
+            <a href="https://github.com/My-IT-discord/myit_react" target={'_blank'}>Github原代碼</a>
           </li>
         </ul>
       </div>
