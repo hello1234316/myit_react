@@ -150,18 +150,14 @@ function BasicExample() {
     </a>
   </li>
   <li className="nav-item">
-    <a className="nav-link" id="links" href="https://discord.gg/myit">
+    <a className="nav-link" id="links" href="https://discord.gg/U3DW4cNkMd">
       加入Discord
     </a>
   </li>
   <li className="nav-item">
-    <a
-      className="nav-link"
-      id="links"
-      href="https://github.com/My-IT-discord/myit"
-    >
+    <a href="https://github.com/My-IT-discord/myit_react" target={'_blank'}>
       Github原代碼
-    </a>
+  </a>
   </li>
       </ul>
     </section>
